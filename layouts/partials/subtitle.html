@@ -1,3 +1,7 @@
-{{- with .Site.Params.homeSubtitle }}
-    <p>{{.}}</p>
+{{- with .Site.Params.homeSubtitleMain }}
+<p class="subtitle-large" style="white-space: pre-line; font-size: 1.5em; margin-bottom: 0.2em;">{{.}}
+</p>
+{{- end }}
+{{- with .Site.Params.homeSubtitleSecondary }}
+<p class="subtitle-small" style="white-space: pre-line; margin-top: 0;">{{.}}</p>
 {{- end }}
